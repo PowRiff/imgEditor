@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>图片编辑器</title>
+
+        <link href = "css/main.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <h1>图片编辑器</h1>
+
+            <form id="urlBox" class = "center">
+                <input class="url-box" type="url" id="imgUrl" placeholder="粘贴图片Url到此，然后按下回车">
+            </form>
+            <div class="sliders">
+                <form id="imageEditor">
+                    <p>
+                        <label for="gs">灰度</label>
+                        <input id="gs" name="gs" type="range" min=0 max=100 value=0>
+                    </p>
+
+                    <p>
+                        <label for="blur">模糊</label>
+                        <input id="blur" name="blur" type="range" min=0 max=10 value=0>
+                    </p>
+
+                    <p>
+                        <label for="br">亮度</label>
+                        <input id="br" name="br" type="range" min=0 max=200 value=100>
+                    </p>
+
+                    <p>
+                        <label for="ct">对比度</label>
+                        <input id="ct" name="ct" type="range" min=0 max=200 value=100>
+                    </p>
+
+                    <p>
+                        <label for="huer">色相旋转</label>
+                        <input id="huer" name="huer" type="range" min=0 max=360 value=0>
+                    </p>
+
+                    <p>
+                        <label for="opacity">不透明度</label>
+                        <input id="opacity" name="opacity" type="range" min=0 max=100 value=100>
+                    </p>
+
+                    <p>
+                        <label for="invert">反转</label>
+                        <input id="invert" name="invert" type="range" min=0 max=100 value=0>
+                    </p>
+
+                    <p>
+                        <label for="saturate">饱和度</label>
+                        <input id="saturate" name="saturate" type="range" min=0 max=500 value=100>
+                    </p>
+
+                    <p>
+                        <label for="sepia">泛黄度</label>
+                        <input id="sepia" name="sepia" type="range" min=0 max=100 value=0>
+                    </p>
+
+                    <input type="reset" form="imageEditor" id="reset" value="重置" />
+
+                </form>
+            </div>  
+
+            <div id="imageContainer" class="center">
+                <img src="images/aviary_heibai.jpg"/>
+            </div>
+        </div>
+
+        <script src="http://cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+
+
+    </body>
+</html>
